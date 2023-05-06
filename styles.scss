@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family:  'Roboto', sans-serif;
+}
+
+@import 'mixin';
+
+header {
+    margin: 0 auto;
+    height:  100px;
+    background-color: rgb(87, 96, 127);
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+
+    h2 {
+        @include title;
+    }
+}
+
+.error-users {
+    @include error;
+}
+
+.users {
+    @include gaps();
+    @include text();
+    a {
+        @include User();
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.posts {
+    @include gaps();
+
+    .user-post {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        a {
+            color: rgb(87, 96, 127);
+            text-decoration: none;
+        }
+    }
+}
+
+.one-post {
+    @include gaps();
+
+    h1 {
+        color: rgb(87, 96, 127);
+        font: {
+            weight:600;
+            size: 36px;
+        }
+    }
+
+    p {
+        @include text();
+    }
+
+    button {
+        padding: 10px;
+        @include text();
+        background-color: rgb(87, 96, 127);
+        color: white;
+        border-radius: 10px;
+    }
+
+    a{
+        text-decoration: none;
+        @include text();
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+    .bottom{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        align-items: center;
+    }
+}
+
+.error-post {
+    @include error();
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.comments {
+    padding-left: 10%;
+    padding-top: 50px;
+    @include text();
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .one-comm {
+       display: flex;
+       flex-direction: row;
+       gap: 50px;
+    }
+    .error-comm {
+        @include error();
+    }
+
+    .name-comm {
+        @include User();
+        width: 210px;
+    }
+}
+

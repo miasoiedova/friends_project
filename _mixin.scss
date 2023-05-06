@@ -1,0 +1,41 @@
+@mixin User () {
+    background: url(./assets/User.png) no-repeat center left;
+    background-size: contain;
+    padding-left: 30px;
+
+    text-decoration: none;
+    color: black;
+}
+
+@mixin title () {
+    font: {
+        weight: 500;
+        size:48px;
+    }
+
+    color: white;
+}
+
+@mixin error () {
+    font: {
+        weight:400;
+        size:20px;
+    }
+
+    color: black;
+}
+
+@mixin gaps() {
+    padding-left: 10%;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+@mixin text() {
+    font: {
+        weight: 400;
+        size: 20px;
+    };
+}

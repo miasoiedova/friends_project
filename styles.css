@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  margin: 0 auto;
+  height: 100px;
+  background-color: rgb(87, 96, 127);
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+}
+header h2 {
+  font-weight: 500;
+  font-size: 48px;
+  color: white;
+}
+
+.error-users {
+  font-weight: 400;
+  font-size: 20px;
+  color: black;
+}
+
+.users {
+  padding-left: 10%;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  font-weight: 400;
+  font-size: 20px;
+}
+.users a {
+  background: url(./assets/User.png) no-repeat center left;
+  background-size: contain;
+  padding-left: 30px;
+  text-decoration: none;
+  color: black;
+}
+.users a:hover {
+  text-decoration: underline;
+}
+
+.posts {
+  padding-left: 10%;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.posts .user-post {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.posts .user-post a {
+  color: rgb(87, 96, 127);
+  text-decoration: none;
+}
+
+.one-post {
+  padding-left: 10%;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.one-post h1 {
+  color: rgb(87, 96, 127);
+  font-weight: 600;
+  font-size: 36px;
+}
+.one-post p {
+  font-weight: 400;
+  font-size: 20px;
+}
+.one-post button {
+  padding: 10px;
+  font-weight: 400;
+  font-size: 20px;
+  background-color: rgb(87, 96, 127);
+  color: white;
+  border-radius: 10px;
+}
+.one-post a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 20px;
+}
+.one-post a:hover {
+  text-decoration: underline;
+}
+.one-post .bottom {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+}
+
+.error-post {
+  font-weight: 400;
+  font-size: 20px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.comments {
+  padding-left: 10%;
+  padding-top: 50px;
+  font-weight: 400;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.comments .one-comm {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+.comments .error-comm {
+  font-weight: 400;
+  font-size: 20px;
+  color: black;
+}
+.comments .name-comm {
+  background: url(./assets/User.png) no-repeat center left;
+  background-size: contain;
+  padding-left: 30px;
+  text-decoration: none;
+  color: black;
+  width: 210px;
+}/*# sourceMappingURL=styles.css.map */
